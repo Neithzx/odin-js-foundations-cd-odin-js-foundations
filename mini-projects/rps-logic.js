@@ -38,4 +38,3 @@ for (let i = 1; i <= 5; i++) {
   const c = getComputerChoice();
   console.log(`Round ${i}: ${playRound(p, c)}`);
 }
-
