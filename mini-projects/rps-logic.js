@@ -15,14 +15,12 @@ const playerWins =
   (player === 'rock' && computer === 'scissors') ||
   (player === 'paper' && computer === 'rock') ||
   (player === 'scissors' && computer === 'paper');
-  // Lines 19-21: Ternary operator for return value
-return playerWins
-  ? `You win! ${player} beats ${computer}`
-  : `You lose! ${computer} beats ${player}`;
+  // Determine and return result
   if (playerWins) {
-  return `You win! ${player} beats ${computer}`;
-} else {
-  return `You lose! ${computer} beats ${player}`;
+    return `You win! ${player} beats ${computer}`;
+  } else {
+    return `You lose! ${computer} beats ${player}`;
+  }
 }
 // Lines 24-30: Test the game with different inputs
 console.log("--- RPS Logic Test ---");
